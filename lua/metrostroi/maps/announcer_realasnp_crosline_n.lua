@@ -104,7 +104,7 @@ Metrostroi.AddANSPAnnouncer("[RU+EN] Real ASNP",
 		otpr_m_115 = {"informator/crossline_n4/115_m_otpr.mp3", 13.125},
 		otpr_m_116 = {"informator/crossline_n4/116_m_otpr.mp3", 11.154},
 
-		--Следующая (женский)
+		--Следующая станция (женский)
 
 		otpr_g_110 = {"informator/crossline_n4/110_g_otpr.mp3", 11.055},
 		otpr_g_111 = {"informator/crossline_n4/111_g_otpr.mp3", 12.823},
