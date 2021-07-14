@@ -64,8 +64,8 @@ Metrostroi.AddANSPAnnouncer("[RU+EN] Real ASNP",
 
         --Поезд следует до станции
 
-        APL_sled_m                 = {"informator/surfacemetro_w/APL_sled_m.mp3",               01.804},
-        APL_sled_g                 = {"informator/surfacemetro_w/APL_sled_g.mp3",               02.296},
+        APL_sled_m                 = {"informator/surfacemetro_w/APL_sled_m.mp3",               02.296},
+        APL_sled_g                 = {"informator/surfacemetro_w/APL_sled_g.mp3",               01.804},
 
         --Станции
 
@@ -127,7 +127,7 @@ Metrostroi.AddANSPAnnouncer("[RU+EN] Real ASNP",
                 arr         = {{"BL_03_p_m"},{"BL_03_p_g"}},
                 dep         = {{"BL_04_o_m"},{"BL_02_o_g"}},
                 arrlast     = {{"BL_03_l_m"},{"BL_03_l_g"}, "BL_03"},
-                not_last    = {0.5,"APL_sled_m",0.1,"BL_03"},
+                not_last    = {0.5,"APL_sled_m","BL_03"},
                 right_doors = true
             },
             {
@@ -146,7 +146,7 @@ Metrostroi.AddANSPAnnouncer("[RU+EN] Real ASNP",
                 arr         = {{"BL_06_p_m"},{"BL_06_p_g"}},
                 dep         = {{"BL_07_o_m"},{"BL_05_o_g"}},
                 arrlast     = {{"BL_06_l_m"},{"BL_06_l_g"}, "BL_06"},
-                not_last    = {0.5,"APL_sled_m",0.1,"BL_06"},
+                not_last    = {0.5,"APL_sled_m","BL_06"},
             },
             {
                 106,"Битцевский Парк",
