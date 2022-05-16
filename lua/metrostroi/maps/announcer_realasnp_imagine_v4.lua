@@ -101,6 +101,11 @@ Metrostroi.AddANSPAnnouncer("[RU] Real ASNP",
 		_802 = {"informator/imagine_line_v4/802.mp3", 1.118}, 
 		_803 = {"informator/imagine_line_v4/803.mp3", 1.118},
 		_804 = {"informator/imagine_line_v4/804.mp3", 1.118},
+
+		--Zakritie seligerskaya
+
+		zakr_kahov = {"subway_announcer/zakritiye_seligerskaya/zakr_kahov_i_01.mp3", 25.489},
+
 	},
 	{
 		{
@@ -111,7 +116,7 @@ Metrostroi.AddANSPAnnouncer("[RU] Real ASNP",
 			{
 				700, "Александровский сад", "Alekxandrovskiy sad",
 				arrlast = {nil, {"arr_700"}, "_700"},
-				dep = {"next_701", nil},
+				dep = {"next_701","zakr_kahov", nil},
 				not_last = {1.5, "click1"},
 				both_doors = true,
 				ignorelast = true,
@@ -131,7 +136,7 @@ Metrostroi.AddANSPAnnouncer("[RU] Real ASNP",
 			},
 			{
 				703, "Пушкинская", "Pushkinskaya",
-				arr = {{"arr_703"}, {"beregite_g", "arr_703_g"}},
+				arr = {{"arr_703","zakr_kahov"}, {"beregite_g", "arr_703_g","zakr_kahov"}},
 				dep = {{"next_704", "maska_perchatki"}, {"next_702_g"}},
 				right_doors = true,
 			},
@@ -149,13 +154,13 @@ Metrostroi.AddANSPAnnouncer("[RU] Real ASNP",
 			},
 			{
 				706, "Каширская", "Kashirskaya",
-				arrlast = {{"beregite", "arr_706"}, nil, "_706"},
-				dep = {nil, {"next_705", "maska_perchatki_g"}},
+				arrlast = {{"zakr_kahov", "beregite", "arr_706"}, nil, "_706"},
+				dep = {nil, {"next_705", "maska_perchatki_g","zakr_kahov"}},
 				right_doors = true,
 				have_inrerchange = true
 			}
 		},
-		{
+--[[	{
 			LED = {7, 8, 7, 8},
 			Name = "Каховская линия",
 			spec_wait = {"spec_attention_train_stop", "spec_attention_train_depart"},
@@ -183,7 +188,7 @@ Metrostroi.AddANSPAnnouncer("[RU] Real ASNP",
 				right_doors = true,
 				have_inrerchange = true
 			}
-		}
+		}     --]]
 	}  
 )
 
